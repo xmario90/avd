@@ -1,4 +1,13 @@
-[1m[36m===== Wed Jan 28 04:44:20 PM CST 2026 ===========================================================================(B[m
+===== Wed Jan 28 04:38:02 PM CST 2026 =================
+ACTION: Server Sync to Repo (Push)
+COMMIT MESSAGE: added log files
+[main e23ddba] added log files
+ 3 files changed, 3 insertions(+)
+ create mode 100644 avd-git.log
+To https://github.com/xmario90/avd.git
+   1b56c83..e23ddba  main -> main
+======================================
+===== Wed Jan 28 04:41:01 PM CST 2026 =================
 
 [1m[33m============================================================================================================(B[m
 [1m[33mOk Daniel-san...you want to sync changes up to your github repo or sync the repo to your server?(B[m
@@ -31,11 +40,21 @@ Selection: 1
 1. Press 1 to Pack the Box ([1m[33mgit add -A(B[m) or 2 to skip: ? 1
 2. Press 1 to Seal the Box ([1m[33mgit commit(B[m) or 2 to skip: ? 1
 
-Daniel-san... your message here: color change
+Daniel-san... your message here: fixing stuff
 
 [1m[33m--- Daniel-san this is what will run ---(B[m
 git add -A
-git commit -m "color change"
+git commit -m "fixing stuff"
 git push
 ===============================
 
+[main 4fe6fda] fixing stuff
+ 7 files changed, 47 insertions(+)
+
+3. Press 1 to Load the Truck ([1m[33mgit push(B[m) or 2 to skip: ? 1
+To https://github.com/xmario90/avd.git
+   e23ddba..4fe6fda  main -> main
+
+[1m[33m--- Daniel-san success the 3 commands ran! ---(B[m
+
+======================================
