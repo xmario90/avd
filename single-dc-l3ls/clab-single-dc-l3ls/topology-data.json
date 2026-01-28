@@ -1,0 +1,525 @@
+{
+  "name": "single-dc-l3ls",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "",
+      "mgmt": {
+        "network": "clab_mgmt-single-dc-l3ls",
+        "bridge": "br-d9510d08b1eb",
+        "ipv4-subnet": "172.16.1.0/24",
+        "ipv4-gw": "172.16.1.1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "dc1-leaf1a": {
+      "index": "0",
+      "shortname": "dc1-leaf1a",
+      "longname": "dc1-leaf1a",
+      "fqdn": "dc1-leaf1a.single-dc-l3ls.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-leaf1a",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.1.101",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:fb:15:54",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d9510d08b1eb",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-leaf1a",
+        "clab-node-longname": "dc1-leaf1a",
+        "clab-node-name": "dc1-leaf1a",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/single-dc-l3ls/topology.clab.yml",
+        "containerlab": "single-dc-l3ls"
+      },
+      "port-bindings": [
+      ]
+    },
+    "dc1-leaf1b": {
+      "index": "1",
+      "shortname": "dc1-leaf1b",
+      "longname": "dc1-leaf1b",
+      "fqdn": "dc1-leaf1b.single-dc-l3ls.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-leaf1b",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.1.102",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:09:2e:46",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d9510d08b1eb",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-leaf1b",
+        "clab-node-longname": "dc1-leaf1b",
+        "clab-node-name": "dc1-leaf1b",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/single-dc-l3ls/topology.clab.yml",
+        "containerlab": "single-dc-l3ls"
+      },
+      "port-bindings": [
+      ]
+    },
+    "dc1-leaf1c": {
+      "index": "2",
+      "shortname": "dc1-leaf1c",
+      "longname": "dc1-leaf1c",
+      "fqdn": "dc1-leaf1c.single-dc-l3ls.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-leaf1c",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.1.151",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:0b:0a:9f",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d9510d08b1eb",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-leaf1c",
+        "clab-node-longname": "dc1-leaf1c",
+        "clab-node-name": "dc1-leaf1c",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/single-dc-l3ls/topology.clab.yml",
+        "containerlab": "single-dc-l3ls"
+      },
+      "port-bindings": [
+      ]
+    },
+    "dc1-leaf2a": {
+      "index": "3",
+      "shortname": "dc1-leaf2a",
+      "longname": "dc1-leaf2a",
+      "fqdn": "dc1-leaf2a.single-dc-l3ls.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-leaf2a",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.1.103",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:ef:6f:37",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d9510d08b1eb",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-leaf2a",
+        "clab-node-longname": "dc1-leaf2a",
+        "clab-node-name": "dc1-leaf2a",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/single-dc-l3ls/topology.clab.yml",
+        "containerlab": "single-dc-l3ls"
+      },
+      "port-bindings": [
+      ]
+    },
+    "dc1-leaf2b": {
+      "index": "4",
+      "shortname": "dc1-leaf2b",
+      "longname": "dc1-leaf2b",
+      "fqdn": "dc1-leaf2b.single-dc-l3ls.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-leaf2b",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.1.104",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:9a:05:95",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d9510d08b1eb",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-leaf2b",
+        "clab-node-longname": "dc1-leaf2b",
+        "clab-node-name": "dc1-leaf2b",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/single-dc-l3ls/topology.clab.yml",
+        "containerlab": "single-dc-l3ls"
+      },
+      "port-bindings": [
+      ]
+    },
+    "dc1-leaf2c": {
+      "index": "5",
+      "shortname": "dc1-leaf2c",
+      "longname": "dc1-leaf2c",
+      "fqdn": "dc1-leaf2c.single-dc-l3ls.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-leaf2c",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.1.152",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:f6:6f:25",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d9510d08b1eb",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-leaf2c",
+        "clab-node-longname": "dc1-leaf2c",
+        "clab-node-name": "dc1-leaf2c",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/single-dc-l3ls/topology.clab.yml",
+        "containerlab": "single-dc-l3ls"
+      },
+      "port-bindings": [
+      ]
+    },
+    "dc1-spine1": {
+      "index": "6",
+      "shortname": "dc1-spine1",
+      "longname": "dc1-spine1",
+      "fqdn": "dc1-spine1.single-dc-l3ls.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-spine1",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.1.11",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:8f:85:f5",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d9510d08b1eb",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-spine1",
+        "clab-node-longname": "dc1-spine1",
+        "clab-node-name": "dc1-spine1",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/single-dc-l3ls/topology.clab.yml",
+        "containerlab": "single-dc-l3ls"
+      },
+      "port-bindings": [
+      ]
+    },
+    "dc1-spine2": {
+      "index": "7",
+      "shortname": "dc1-spine2",
+      "longname": "dc1-spine2",
+      "fqdn": "dc1-spine2.single-dc-l3ls.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-spine2",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.1.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:08:a9:3f",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d9510d08b1eb",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/single-dc-l3ls/clab-single-dc-l3ls/dc1-spine2",
+        "clab-node-longname": "dc1-spine2",
+        "clab-node-name": "dc1-spine2",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/single-dc-l3ls/topology.clab.yml",
+        "containerlab": "single-dc-l3ls"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-spine2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:67:48:bb",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-leaf1a",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:2c:4b:6f",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-spine2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:e8:a1:16",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-leaf1b",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:7d:98:ce",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-spine2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:1d:69:5c",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-leaf2a",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:82:17:6a",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-spine2",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:dd:32:38",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-leaf2b",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:07:02:c7",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-leaf2b",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:04:9e:28",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-leaf2a",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:94:7d:fd",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-leaf2b",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:37:b1:86",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-leaf2a",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:c1:21:6d",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-leaf2b",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:9c:cc:fd",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-spine1",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:06:59:a7",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-leaf2b",
+          "interface": "eth8",
+          "mac": "aa:c1:ab:f2:40:1a",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-leaf2c",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:7b:bf:7c",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-leaf1a",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:23:d0:53",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-leaf1b",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:0f:8c:22",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-leaf1a",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:87:a9:d3",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-leaf1b",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:60:43:a1",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-leaf1a",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:4f:17:2c",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-spine1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:fd:90:df",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-leaf1a",
+          "interface": "eth8",
+          "mac": "aa:c1:ab:2a:85:4a",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-leaf1c",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:16:6c:81",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-leaf2c",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:cb:ed:63",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-leaf2a",
+          "interface": "eth8",
+          "mac": "aa:c1:ab:38:2e:fe",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-leaf1b",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:a5:4d:5f",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-spine1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:e7:2c:ae",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-leaf1b",
+          "interface": "eth8",
+          "mac": "aa:c1:ab:75:0b:63",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-leaf1c",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:30:0e:8e",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "dc1-leaf2a",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:8c:3b:cd",
+          "peer": "z"
+        },
+        "z": {
+          "node": "dc1-spine1",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:9c:fb:cf",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}

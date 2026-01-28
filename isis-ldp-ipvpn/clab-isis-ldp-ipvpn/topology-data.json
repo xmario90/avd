@@ -1,0 +1,509 @@
+{
+  "name": "isis-ldp-ipvpn",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "",
+      "mgmt": {
+        "network": "clab_mgmt-isis-ldp-ipvpn",
+        "bridge": "br-e0acac655883",
+        "ipv4-subnet": "172.16.2.0/24",
+        "ipv4-gw": "172.16.2.1",
+        "ipv6-gw": "fe80::6c51:2eff:fe91:8bcd",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "p1": {
+      "index": "0",
+      "shortname": "p1",
+      "longname": "p1",
+      "fqdn": "p1.isis-ldp-ipvpn.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/p1",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.2.11",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:e8:4f:b9",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e0acac655883",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/p1",
+        "clab-node-longname": "p1",
+        "clab-node-name": "p1",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/isis-ldp-ipvpn/topology.clab.yml",
+        "containerlab": "isis-ldp-ipvpn"
+      },
+      "port-bindings": [
+      ]
+    },
+    "p2": {
+      "index": "1",
+      "shortname": "p2",
+      "longname": "p2",
+      "fqdn": "p2.isis-ldp-ipvpn.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/p2",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.2.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:47:25:97",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e0acac655883",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/p2",
+        "clab-node-longname": "p2",
+        "clab-node-name": "p2",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/isis-ldp-ipvpn/topology.clab.yml",
+        "containerlab": "isis-ldp-ipvpn"
+      },
+      "port-bindings": [
+      ]
+    },
+    "p3": {
+      "index": "2",
+      "shortname": "p3",
+      "longname": "p3",
+      "fqdn": "p3.isis-ldp-ipvpn.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/p3",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.2.13",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:d2:d4:60",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e0acac655883",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/p3",
+        "clab-node-longname": "p3",
+        "clab-node-name": "p3",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/isis-ldp-ipvpn/topology.clab.yml",
+        "containerlab": "isis-ldp-ipvpn"
+      },
+      "port-bindings": [
+      ]
+    },
+    "p4": {
+      "index": "3",
+      "shortname": "p4",
+      "longname": "p4",
+      "fqdn": "p4.isis-ldp-ipvpn.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/p4",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.2.24",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:ec:db:43",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e0acac655883",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/p4",
+        "clab-node-longname": "p4",
+        "clab-node-name": "p4",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/isis-ldp-ipvpn/topology.clab.yml",
+        "containerlab": "isis-ldp-ipvpn"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pe1": {
+      "index": "4",
+      "shortname": "pe1",
+      "longname": "pe1",
+      "fqdn": "pe1.isis-ldp-ipvpn.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/pe1",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.2.101",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:d4:82:c0",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e0acac655883",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/pe1",
+        "clab-node-longname": "pe1",
+        "clab-node-name": "pe1",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/isis-ldp-ipvpn/topology.clab.yml",
+        "containerlab": "isis-ldp-ipvpn"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pe2": {
+      "index": "5",
+      "shortname": "pe2",
+      "longname": "pe2",
+      "fqdn": "pe2.isis-ldp-ipvpn.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/pe2",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.2.102",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:65:9f:55",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e0acac655883",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/pe2",
+        "clab-node-longname": "pe2",
+        "clab-node-name": "pe2",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/isis-ldp-ipvpn/topology.clab.yml",
+        "containerlab": "isis-ldp-ipvpn"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pe3": {
+      "index": "6",
+      "shortname": "pe3",
+      "longname": "pe3",
+      "fqdn": "pe3.isis-ldp-ipvpn.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/pe3",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.2.103",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:b0:14:db",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e0acac655883",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/pe3",
+        "clab-node-longname": "pe3",
+        "clab-node-name": "pe3",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/isis-ldp-ipvpn/topology.clab.yml",
+        "containerlab": "isis-ldp-ipvpn"
+      },
+      "port-bindings": [
+      ]
+    },
+    "rr1": {
+      "index": "7",
+      "shortname": "rr1",
+      "longname": "rr1",
+      "fqdn": "rr1.isis-ldp-ipvpn.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/rr1",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.2.151",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:e6:c5:02",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e0acac655883",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/rr1",
+        "clab-node-longname": "rr1",
+        "clab-node-name": "rr1",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/isis-ldp-ipvpn/topology.clab.yml",
+        "containerlab": "isis-ldp-ipvpn"
+      },
+      "port-bindings": [
+      ]
+    },
+    "rr2": {
+      "index": "8",
+      "shortname": "rr2",
+      "longname": "rr2",
+      "fqdn": "rr2.isis-ldp-ipvpn.io",
+      "group": "",
+      "labdir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/rr2",
+      "kind": "ceos",
+      "image": "ceos:4.30.3M",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.16.2.152",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "00:1c:73:1b:96:f0",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e0acac655883",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/tardis/avd/isis-ldp-ipvpn/clab-isis-ldp-ipvpn/rr2",
+        "clab-node-longname": "rr2",
+        "clab-node-name": "rr2",
+        "clab-node-type": "",
+        "clab-owner": "tardis",
+        "clab-topo-file": "/home/tardis/avd/isis-ldp-ipvpn/topology.clab.yml",
+        "containerlab": "isis-ldp-ipvpn"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "pe3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:0f:f2:ff",
+          "peer": "z"
+        },
+        "z": {
+          "node": "p3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:09:ab:fc",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "pe3",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:00:33:09",
+          "peer": "z"
+        },
+        "z": {
+          "node": "p4",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:43:19:9d",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p4",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:25:c9:79",
+          "peer": "z"
+        },
+        "z": {
+          "node": "rr2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:49:b9:ac",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p4",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:b1:09:76",
+          "peer": "z"
+        },
+        "z": {
+          "node": "p3",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:db:57:93",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:9a:04:34",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pe1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:d2:87:4c",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:e6:a3:03",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pe2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:f0:67:df",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p2",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:10:ed:5d",
+          "peer": "z"
+        },
+        "z": {
+          "node": "p1",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:45:39:69",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:45:5b:3f",
+          "peer": "z"
+        },
+        "z": {
+          "node": "rr2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:02:97:4b",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:97:b8:1a",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pe1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:08:d9:69",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:43:42:a8",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pe2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:82:01:b3",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p1",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:48:97:ea",
+          "peer": "z"
+        },
+        "z": {
+          "node": "rr1",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:f7:ef:e7",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "rr2",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:61:33:29",
+          "peer": "z"
+        },
+        "z": {
+          "node": "rr1",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:ee:c2:9b",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p3",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:61:b0:97",
+          "peer": "z"
+        },
+        "z": {
+          "node": "rr1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:c8:2f:d0",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}

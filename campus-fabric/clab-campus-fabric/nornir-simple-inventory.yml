@@ -1,0 +1,51 @@
+---
+LEAF1A:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.100.100.9
+LEAF1B:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.100.100.10
+LEAF2A:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.100.100.8
+LEAF3A:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.100.100.6
+LEAF3B:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.100.100.11
+LEAF3C:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.100.100.7
+LEAF3D:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.100.100.4
+LEAF3E:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.100.100.2
+SPINE1:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.100.100.5
+SPINE2:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.100.100.3

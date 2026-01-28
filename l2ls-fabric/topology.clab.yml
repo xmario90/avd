@@ -1,0 +1,80 @@
+name: l2ls-fabric
+prefix: ''
+mgmt:
+  network: clab_mgmt-l2ls-fabric
+  ipv4-subnet: 172.16.100.0/24
+topology:
+  nodes:
+    SPINE1:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/SPINE1.cfg
+      mgmt-ipv4: 172.16.100.101
+    LEAF4:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/LEAF4.cfg
+      mgmt-ipv4: 172.16.100.108
+    SPINE2:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/SPINE2.cfg
+      mgmt-ipv4: 172.16.100.102
+    LEAF2:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/LEAF2.cfg
+      mgmt-ipv4: 172.16.100.106
+    LEAF1:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/LEAF1.cfg
+      mgmt-ipv4: 172.16.100.105
+    LEAF3:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/LEAF3.cfg
+      mgmt-ipv4: 172.16.100.107
+  links:
+  - endpoints:
+    - SPINE1:eth47
+    - SPINE2:eth47
+  - endpoints:
+    - SPINE1:eth48
+    - SPINE2:eth48
+  - endpoints:
+    - SPINE1:eth1
+    - LEAF1:eth1
+  - endpoints:
+    - SPINE1:eth2
+    - LEAF2:eth1
+  - endpoints:
+    - SPINE1:eth3
+    - LEAF3:eth1
+  - endpoints:
+    - SPINE1:eth4
+    - LEAF4:eth1
+  - endpoints:
+    - LEAF4:eth47
+    - LEAF3:eth47
+  - endpoints:
+    - LEAF4:eth48
+    - LEAF3:eth48
+  - endpoints:
+    - LEAF4:eth2
+    - SPINE2:eth4
+  - endpoints:
+    - SPINE2:eth1
+    - LEAF1:eth2
+  - endpoints:
+    - SPINE2:eth2
+    - LEAF2:eth2
+  - endpoints:
+    - SPINE2:eth3
+    - LEAF3:eth2
+  - endpoints:
+    - LEAF2:eth47
+    - LEAF1:eth47
+  - endpoints:
+    - LEAF2:eth48
+    - LEAF1:eth48

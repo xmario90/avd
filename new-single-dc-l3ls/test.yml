@@ -1,0 +1,14 @@
+---
+- name: Hello World and Topology Test
+  hosts: FABRIC
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: Debug Verify
+      debug:
+        msg: "I see host {{ inventory_hostname }}"
+
+    - name: Generate Containerlab Topology
+      import_role:
+        name: eos_designs_to_containerlab
+      run_once: true

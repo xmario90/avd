@@ -1,0 +1,108 @@
+name: campus-fabric
+prefix: ''
+mgmt:
+  network: clab_mgmt
+  ipv4-subnet: 172.100.100.0/24
+topology:
+  nodes:
+    LEAF3C:
+      kind: ceos
+      image: ceos:latest
+      startup-config: intended/configs/LEAF3C.cfg
+    SPINE1:
+      kind: ceos
+      image: ceos:latest
+      startup-config: intended/configs/SPINE1.cfg
+    SPINE2:
+      kind: ceos
+      image: ceos:latest
+      startup-config: intended/configs/SPINE2.cfg
+    LEAF1A:
+      kind: ceos
+      image: ceos:latest
+      startup-config: intended/configs/LEAF1A.cfg
+    LEAF3B:
+      kind: ceos
+      image: ceos:latest
+      startup-config: intended/configs/LEAF3B.cfg
+    LEAF3A:
+      kind: ceos
+      image: ceos:latest
+      startup-config: intended/configs/LEAF3A.cfg
+    LEAF3D:
+      kind: ceos
+      image: ceos:latest
+      startup-config: intended/configs/LEAF3D.cfg
+    LEAF3E:
+      kind: ceos
+      image: ceos:latest
+      startup-config: intended/configs/LEAF3E.cfg
+    LEAF2A:
+      kind: ceos
+      image: ceos:latest
+      startup-config: intended/configs/LEAF2A.cfg
+    LEAF1B:
+      kind: ceos
+      image: ceos:latest
+      startup-config: intended/configs/LEAF1B.cfg
+  links:
+  - endpoints:
+    - LEAF3C:eth971
+    - LEAF3A:eth973
+  - endpoints:
+    - LEAF3C:eth972
+    - LEAF3B:eth973
+  - endpoints:
+    - SPINE1:eth551
+    - SPINE2:eth551
+  - endpoints:
+    - SPINE1:eth561
+    - SPINE2:eth561
+  - endpoints:
+    - SPINE1:eth1
+    - LEAF1A:eth51
+  - endpoints:
+    - SPINE1:eth491
+    - LEAF2A:eth11
+  - endpoints:
+    - SPINE1:eth501
+    - LEAF3A:eth971
+  - endpoints:
+    - SPINE1:eth511
+    - LEAF3B:eth971
+  - endpoints:
+    - SPINE2:eth1
+    - LEAF1B:eth51
+  - endpoints:
+    - SPINE2:eth491
+    - LEAF2A:eth13
+  - endpoints:
+    - SPINE2:eth501
+    - LEAF3A:eth972
+  - endpoints:
+    - SPINE2:eth511
+    - LEAF3B:eth972
+  - endpoints:
+    - LEAF1A:eth53
+    - LEAF1B:eth53
+  - endpoints:
+    - LEAF1A:eth54
+    - LEAF1B:eth54
+  - endpoints:
+    - LEAF3B:eth983
+    - LEAF3A:eth983
+  - endpoints:
+    - LEAF3B:eth984
+    - LEAF3A:eth984
+  - endpoints:
+    - LEAF3B:eth974
+    - LEAF3D:eth972
+  - endpoints:
+    - LEAF3B:eth981
+    - LEAF3E:eth972
+  - endpoints:
+    - LEAF3A:eth974
+    - LEAF3D:eth971
+  - endpoints:
+    - LEAF3A:eth981
+    - LEAF3E:eth971

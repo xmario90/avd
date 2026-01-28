@@ -1,0 +1,24 @@
+---
+name: AVD
+
+prefix: __lab-name
+
+mgmt:
+  network: MGMT
+  ipv4-subnet: None
+topology:
+  nodes:
+    dc1-spine2:
+      kind: ceos
+      image: ceos:latest
+      mgmt-ipv4: 172.16.1.12
+      startup-config: dc1-spine1_configs/dc1-spine2.cfg
+
+
+  links:
+    - endpoints: ["dc1-spine2:eth1", "host:vx103-eth2"]
+    - endpoints: ["dc1-spine2:eth2", "host:vx106-eth2"]
+    - endpoints: ["dc1-spine2:eth3", "host:vx111-eth2"]
+    - endpoints: ["dc1-spine2:eth4", "host:vx114-eth2"]
+
+    

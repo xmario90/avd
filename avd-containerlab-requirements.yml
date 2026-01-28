@@ -1,0 +1,22 @@
+---
+# avd-containerlab-requirements.yml
+
+# SECTION 1: COLLECTIONS
+# These are the official Arista libraries required for AVD to function.
+collections:
+  # 1. The Core Logic (Standard Library)
+  # This contains the main AVD compiler roles ('eos_designs' and 'eos_cli_config_gen').
+  - name: arista.avd
+  
+  # 2. The Hardware Driver (HAL)
+  # This contains the modules to talk to EOS devices (required for deployment).
+  - name: arista.eos
+
+# SECTION 2: ROLES
+# This is where we define standalone tools like the Containerlab generator.
+roles:
+  # 3. The Containerlab Generator (Third-Party Extension)
+  # This tool reads AVD data and outputs the 'topology.clab.yml' file.
+  - name: eos_designs_to_containerlab
+    src: https://github.com/arista-netdevops-community/eos_designs_to_containerlab.git
+    version: main

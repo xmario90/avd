@@ -1,0 +1,92 @@
+name: isis-ldp-ipvpn
+prefix: ''
+mgmt:
+  network: clab_mgmt-isis-ldp-ipvpn
+  ipv4-subnet: 172.16.2.0/24
+topology:
+  nodes:
+    pe3:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/pe3.cfg
+      mgmt-ipv4: 172.16.2.103
+    p4:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/p4.cfg
+      mgmt-ipv4: 172.16.2.24
+    p2:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/p2.cfg
+      mgmt-ipv4: 172.16.2.12
+    p1:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/p1.cfg
+      mgmt-ipv4: 172.16.2.11
+    rr2:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/rr2.cfg
+      mgmt-ipv4: 172.16.2.152
+    pe1:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/pe1.cfg
+      mgmt-ipv4: 172.16.2.101
+    pe2:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/pe2.cfg
+      mgmt-ipv4: 172.16.2.102
+    p3:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/p3.cfg
+      mgmt-ipv4: 172.16.2.13
+    rr1:
+      kind: ceos
+      image: ceos:4.30.3M
+      startup-config: intended/configs/rr1.cfg
+      mgmt-ipv4: 172.16.2.151
+  links:
+  - endpoints:
+    - pe3:eth1
+    - p3:eth1
+  - endpoints:
+    - pe3:eth3
+    - p4:eth3
+  - endpoints:
+    - p4:eth2
+    - rr2:eth2
+  - endpoints:
+    - p4:eth4
+    - p3:eth4
+  - endpoints:
+    - p2:eth2
+    - pe1:eth2
+  - endpoints:
+    - p2:eth1
+    - pe2:eth1
+  - endpoints:
+    - p2:eth4
+    - p1:eth4
+  - endpoints:
+    - p2:eth3
+    - rr2:eth3
+  - endpoints:
+    - p1:eth1
+    - pe1:eth1
+  - endpoints:
+    - p1:eth2
+    - pe2:eth2
+  - endpoints:
+    - p1:eth3
+    - rr1:eth3
+  - endpoints:
+    - rr2:eth4
+    - rr1:eth4
+  - endpoints:
+    - p3:eth2
+    - rr1:eth2

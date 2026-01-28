@@ -1,0 +1,16 @@
+---
+- name: Build Consolidated Containerlab Topology
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: Generate Master Topology File
+      template:
+        # This points to the template file inside the role you downloaded
+        src: roles/eos_designs_to_containerlab/templates/containerlab_topology.txt
+        dest: ./topology.clab.yml
+      vars:
+        # This tells the template: "Don't just look at one switch, 
+        # look at every switch in the FABRIC group."
+        avd_nodes: "{{ groups['FABRIC'] }}"
+        lab_name: "AVD_LAB"

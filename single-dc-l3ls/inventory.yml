@@ -1,0 +1,85 @@
+---
+all:
+  children:
+    CLOUDVISION:
+      hosts:
+        cvp:
+          ansible_host: 192.168.1.12
+          ansible_user: ansible
+          ansible_password: ansible
+          ansible_connection: httpapi
+          ansible_httpapi_use_ssl: true
+          ansible_httpapi_validate_certs: false
+          ansible_network_os: eos
+
+    FABRIC:
+      children:
+        DC1:
+          children:
+            DC1_SPINES:
+              hosts:
+                dc1-spine1:
+                  ansible_host: 172.16.1.11
+                  structured_config:
+                    clab:
+                      labels:
+                        graph-dot-pos: "623,637"
+                dc1-spine2:
+                  ansible_host: 172.16.1.12
+                  structured_config:
+                    clab:
+                      labels:
+                        graph-dot-pos: "777,637"
+            DC1_L3_LEAVES:
+              hosts:
+                dc1-leaf1a:
+                  ansible_host: 172.16.1.101
+                  structured_config:
+                    clab:
+                      labels:
+                        graph-dot-pos: "581,721"
+                dc1-leaf1b:
+                  ansible_host: 172.16.1.102
+                  structured_config:
+                    clab:
+                      labels:
+                        graph-dot-pos: "665,721"
+                dc1-leaf2a:
+                  ansible_host: 172.16.1.103
+                  structured_config:
+                    clab:
+                      labels:
+                        graph-dot-pos: "819,721"
+                dc1-leaf2b:
+                  ansible_host: 172.16.1.104
+                  structured_config:
+                    clab:
+                      labels:
+                        graph-dot-pos: "721,721"
+            DC1_L2_LEAVES:
+              hosts:
+                dc1-leaf1c:
+                  ansible_host: 172.16.1.151
+                  structured_config:
+                    clab:
+                      labels:
+                        graph-dot-pos: "623,777"
+                dc1-leaf2c:
+                  ansible_host: 172.16.1.152
+                  structured_config:
+                    clab:
+                      labels:
+                        graph-dot-pos: "763,777"
+
+    NETWORK_SERVICES:
+      children:
+        DC1_L3_LEAVES:
+        DC1_L2_LEAVES:
+    CONNECTED_ENDPOINTS:
+      children:
+        DC1_L3_LEAVES:
+        DC1_L2_LEAVES:
+
+SIMULATION:
+  children:
+    FABRIC:

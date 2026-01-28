@@ -1,0 +1,5 @@
+{
+    "ansible.ansible.path": "/home/tardis/.local/bin/ansible-playbook",
+    "ansible.python.interpreterPath": "/usr/bin/python3",
+    "ansible.validation.lint.enabled": false
+}
