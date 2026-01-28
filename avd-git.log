@@ -1,48 +1,4 @@
-[1m[36m===== Wed Jan 28 04:47:27 PM CST 2026 ===========================================================================(B[m
-
-Ok Daniel-san...you want to sync changes up to your github repo or sync the repo to your server?
-
-Daniel-san currently:
-you are working in the following directory ---> /home/tardis/avd
-you are working with the following git repo --> https://github.com/xmario90/avd.git
-
-Selection: 1
-
-= We will follow the three-step "Shipping Department" process: =============================================
-
-1. git add -A (Packing the Box): You are walking through the entire warehouse (the /home/tardis/avd folder),
-                                 and putting every changed or new file into a box. The box stays on the floor on Lab2.
-
-2. git commit -m "Your Message Here" (Sealing and Labeling): You tape the box shut and write a description on the outside.
-                                                              This saves the change to your local history on Lab2.
-
-3. git push (Loading the Truck): This is the final synchronization. You are physically sending that labeled box.
-                                 Over the internet to the GitHub warehouse!
-
-============================================================================================================
-
-1. Press 1 to Pack the Box (git add -A) or 2 to skip: ? 1
-2. Press 1 to Seal the Box (git commit) or 2 to skip: ? 1
-
-Daniel-san... your message here: testing test test
-
---- Daniel-san this is what will run ---
-git add -A
-git commit -m "testing test test"
-git push
-===============================
-[main 4acfc3b] testing test test
- 2 files changed, 42 insertions(+), 85 deletions(-)
- rewrite avd-git.log (64%)
- copy avd-git.log => avd-git.log2 (91%)
-3. Press 1 to Load the Truck (git push) or 2 to skip: ? 1
-To https://github.com/xmario90/avd.git
-   2471764..4acfc3b  main -> main
-
---- Daniel-san success the 3 commands ran! ---
-
-[1m[36m============================================================================================================(B[m
-[1m[36m===== Wed Jan 28 04:54:14 PM CST 2026 ===========================================================================(B[m
+[1m[36m===== Wed Jan 28 04:55:34 PM CST 2026 ===========================================================================(B[m
 
 Ok Daniel-san...you want to sync changes up to your github repo or sync the repo to your server?
 
@@ -66,10 +22,10 @@ Selection: 1
 ============================================================================================================
 
 
-Daniel-san... your message here: hello testing
+Daniel-san... your message here: testing 455pm
 
 --- Daniel-san this is what will run ---
 git add -A
-git commit -m "hello testing"
+git commit -m "testing 455pm"
 git push
 ===============================
