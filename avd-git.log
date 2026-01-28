@@ -1,3 +1,50 @@
 ===== Wed Jan 28 04:38:02 PM CST 2026 =================
 ACTION: Server Sync to Repo (Push)
 COMMIT MESSAGE: added log files
+[main e23ddba] added log files
+ 3 files changed, 3 insertions(+)
+ create mode 100644 avd-git.log
+To https://github.com/xmario90/avd.git
+   1b56c83..e23ddba  main -> main
+======================================
+===== Wed Jan 28 04:41:01 PM CST 2026 =================
+
+[1m[33m============================================================================================================(B[m
+[1m[33mOk Daniel-san...you want to sync changes up to your github repo or sync the repo to your server?(B[m
+
+Daniel-san currently:
+you are working in the following directory ---> [1m[36m/home/tardis/avd(B[m
+you are working with the following git repo --> [1m[36mhttps://github.com/xmario90/avd.git(B[m
+
+Daniel-san... decide!
+press 1 ) server sync to repo
+press 2 ) repo sync to your server
+press 3 ) go back
+press 0 ) exit
+
+Selection: 1
+
+[1m[33m= We will follow the three-step "Shipping Department" process: =============================================(B[m
+
+1. [1m[33mgit add -A(B[m (Packing the Box): You are walking through the entire warehouse (the /home/tardis/avd folder),
+                                 and putting every changed or new file into a box. The box stays on the floor on Lab2.
+
+2. [1m[33mgit commit -m "Your Message Here"(B[m (Sealing and Labeling): You tape the box shut and write a description on the outside.
+                                                              This saves the change to your local history on Lab2.
+
+3. [1m[33mgit push(B[m (Loading the Truck): This is the final synchronization. You are physically sending that labeled box.
+                                 Over the internet to the GitHub warehouse!
+
+[1m[33m============================================================================================================(B[m
+
+1. Press 1 to Pack the Box ([1m[33mgit add -A(B[m) or 2 to skip: ? 1
+2. Press 1 to Seal the Box ([1m[33mgit commit(B[m) or 2 to skip: ? 1
+
+Daniel-san... your message here: fixing stuff
+
+[1m[33m--- Daniel-san this is what will run ---(B[m
+git add -A
+git commit -m "fixing stuff"
+git push
+===============================
+
