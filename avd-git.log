@@ -39,3 +39,47 @@ git commit -m "color change"
 git push
 ===============================
 
+[main d884062] color change
+ 10 files changed, 63 insertions(+), 12 deletions(-)
+ create mode 100644 avd-git.log-old
+
+3. Press 1 to Load the Truck ([1m[33mgit push(B[m) or 2 to skip: ? 1
+To https://github.com/xmario90/avd.git
+   4fe6fda..d884062  main -> main
+
+[1m[33m--- Daniel-san success the 3 commands ran! ---(B[m
+
+[1m[36m============================================================================================================(B[m
+[1m[36m===== Wed Jan 28 04:46:54 PM CST 2026 ===========================================================================(B[m
+
+Ok Daniel-san...you want to sync changes up to your github repo or sync the repo to your server?
+
+Daniel-san currently:
+you are working in the following directory ---> /home/tardis/avd
+you are working with the following git repo --> https://github.com/xmario90/avd.git
+
+Selection: 1
+
+= We will follow the three-step "Shipping Department" process: =============================================
+
+1. git add -A (Packing the Box): You are walking through the entire warehouse (the /home/tardis/avd folder),
+                                 and putting every changed or new file into a box. The box stays on the floor on Lab2.
+
+2. git commit -m "Your Message Here" (Sealing and Labeling): You tape the box shut and write a description on the outside.
+                                                              This saves the change to your local history on Lab2.
+
+3. git push (Loading the Truck): This is the final synchronization. You are physically sending that labeled box.
+                                 Over the internet to the GitHub warehouse!
+
+============================================================================================================
+
+1. Press 1 to Pack the Box (git add -A) or 2 to skip: ? 1
+2. Press 1 to Seal the Box (git commit) or 2 to skip: ? 1
+
+Daniel-san... your message here: testing
+
+--- Daniel-san this is what will run ---
+git add -A
+git commit -m "testing"
+git push
+===============================
