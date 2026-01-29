@@ -151,15 +151,14 @@ management api http-commands
 
 | User | Privilege | Role | Disabled | Shell |
 | ---- | --------- | ---- | -------- | ----- |
-| admin | 15 | network-admin | False | - |
 | arista | 15 | network-admin | False | - |
 
 #### Local Users Device Configuration
 
 ```eos
 !
-username admin privilege 15 role network-admin nopassword
 username arista privilege 15 role network-admin secret sha512 <removed>
+username arista ssh-key ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDAxqLbRLomHla7KJ23e3tVjcfVdDOmruwrwEZ6RRKPaLd3/oOBqKi3aRnXzRwLLfA5dzF6lhaaCAUbm0FZPA+NYNasn7wcGXMzq7kpb0LjEm0HUH3X1fYqiMTthCY/RxQ/IqLD71cVcXUarRqaqxrapsEiaxBi2sQcUp4OFF2NaBSFDb1xvFMsCJ/cuEtrFEh8GnpK0F9pXVdwck08Upvg1GlrfPXNmP67Tne3DrgnyFFFDMn7u+mJyg+3vFFXRAqtmppf79KKyliyAyIhAwICEXreWlFhb0sYcxMUWm7qpS1aFhLL3ExTGRUXpcWTEaYSISZtgw3yY3qOWl1xZ6jX9Q7C0maIzm3iStUIwqlXydU8eX3C/FqJmMQop2yLV4twR5G3iL377uN1bzPn+cVsKv/xDlHydSnq2SPH+6UjESVvCkFDJrgh6GUNu7tsCJ8sMM+pMoR4sLlyFD3BViSsBaYsVZe9WrOT5hhTIlnY7fjoX1lP3RD49avUQSE3bD+5tNfhHIgUzlNdlbUlo4CU32lFrJ1KCs7Uj8w2PPT5abUSzSK150DotQ/qw2HlqzgzUFW6qRG6XfEEML0Xc6ELQmgtM9lQ0J0JZ83/ViHcrChBPvuolaJqJX7dYE/1dIoAXkTZb+Dd8G4vm4dIK4aPrk5tTU5Z+5owr5AD4gMUUw== mrgarcia@maui
 ```
 
 ### Enable Password
